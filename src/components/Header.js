@@ -1,4 +1,8 @@
+// importing the troll face png
+
 import trollFace from "../images/troll-face.png"
+
+// composing and exporting the Header component with JSX
 
 export default function Header() {
     return (
