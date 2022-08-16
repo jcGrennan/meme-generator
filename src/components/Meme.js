@@ -4,14 +4,14 @@ import React from "react"
 // composing and exporting the Meme component
 export default function Meme() {
 
-    // using state to create an object that acts as the meme template
+    // using state to create an object that acts as the meme template, and a function to change that object
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg" 
     })
 
-    // using state to create an array that will hold the memes fetched from an api
+    // using state to create an array that will hold the memes fetched from an api, an a function to change that array
     const [allMemes, setAllMemes] = React.useState([])
     
     // using Effect to fetch the memes and then setting the allMemes array to the data fetched
