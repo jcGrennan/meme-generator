@@ -96,7 +96,7 @@ export default function Meme() {
 
             <div className="meme">
 
-                <img src={meme.randomImage} className="meme--image" />
+                <img className="meme--image" src={meme.randomImage} alt="randomly generated meme"/>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
 
