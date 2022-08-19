@@ -5,13 +5,16 @@ import Meme from "./components/Meme"
 
 // Composing and exporting the App
 
-function App() {
+export default function App() {
+ 
   return (
+    
     <div>
+      
       <Header />
       <Meme />
+
     </div>
+
   );
 }
-
-export default App;
