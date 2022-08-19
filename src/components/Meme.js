@@ -30,7 +30,7 @@ export default function Meme() {
 
     }, [])
     
-    // declaring a function that chooses a random meme image from the array and sets the randomImage property to its url
+    // declaring a function that chooses a random meme image from the array and sets the randomImage property of meme to its url
 
     function getMemeImage() {
 
@@ -51,7 +51,7 @@ export default function Meme() {
     function handleChange(event) {
 
         // destructuring the event target
-        
+
         const {name, value} = event.target
 
         setMeme(prevMeme => ({
