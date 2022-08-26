@@ -1,13 +1,10 @@
 // importing React to use State and Effect Hooks
-
 import React from "react"
 
 // composing and exporting the Meme component
-
 export default function Meme() {
 
     // using the State hook to create an object that acts as the meme template, and a function to change that object
-
     const [meme, setMeme] = React.useState({
 
         topText: "",
@@ -17,11 +14,9 @@ export default function Meme() {
     })
 
     // using the State hook to create an array that will hold the memes fetched from an api, and a function to alter that array
-
     const [allMemes, setAllMemes] = React.useState([])
     
     // using the Effect hook to fetch the memes and then setting the allMemes array to the data fetched
-
     React.useEffect(() => {
 
         fetch("https://api.imgflip.com/get_memes")
@@ -31,7 +26,6 @@ export default function Meme() {
     }, [])
     
     // declaring a function that chooses a random meme image from the array and sets the randomImage property of meme to its url
-
     function getMemeImage() {
 
         const randomNumber = Math.floor(Math.random() * allMemes.length)
@@ -47,11 +41,9 @@ export default function Meme() {
     }
     
     // declaring a function that changes the top or bottom text property value depending on which form input has been changed
-
     function handleChange(event) {
 
         // destructuring the event target
-
         const {name, value} = event.target
 
         setMeme(prevMeme => ({
@@ -63,7 +55,6 @@ export default function Meme() {
     }
     
     // composing the meme component using form inputs and the functions declared above
-
     return (
 
         <main>
